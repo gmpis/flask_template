@@ -16,3 +16,6 @@ export FLASK_RUN_PORT=5005
 export FLASK_ENV=development 
 
 flask run --host=0.0.0.0 --port=5004  
+
+##OR run the app using gunicorn:  
+gunicorn -w 1 -b 127.0.0.1:5005 hello:app
